@@ -18,7 +18,7 @@ jobs:
       - name: Install ruff
         run: pip install ruff
       - name: Run linter
-        run: ruff check app/ tests/ --max-line-length=120
+        run: ruff check app/ tests/ --line-length=120
 
   unit_tests:
     runs-on: ubuntu-latest
