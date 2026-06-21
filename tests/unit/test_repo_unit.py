@@ -8,7 +8,6 @@ def test_create_users_table():
     db = Path("/tmp/test.db")
     conn = sqlite3.connect(db)
     create_users_table(conn)
-    # Проверяем, что таблица создалась
     result = conn.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='users'").fetchone()
     assert result is not None
     conn.close()
