@@ -1,7 +1,7 @@
 import sys
 sys.path.append('..')
-from app.math import add, subtract, multiply, divide
-# Тест с ветвлениями (для branch coverage)
+from app.math import divide
+
 def test_divide_branches():
     # Проверяем положительное деление
     assert divide(10, 2) == 5
